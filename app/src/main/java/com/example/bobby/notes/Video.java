@@ -20,6 +20,9 @@ public class Video extends YouTubeBaseActivity implements YouTubePlayer.OnInitia
 
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtubePlayer);
         youTubePlayerView.initialize(GOOGLE_API_KEY, this);
+
+        Toast.makeText(this, "To avoid any copyright or legal issue \n" +
+                " this is intentionally a plain stock video.", Toast.LENGTH_LONG).show();
     }
 
     @Override
